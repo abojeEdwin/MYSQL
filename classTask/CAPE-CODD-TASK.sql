@@ -1,1 +1,0 @@
-USE cape_codd;

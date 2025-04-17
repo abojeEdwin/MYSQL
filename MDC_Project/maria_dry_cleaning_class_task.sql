@@ -16,4 +16,3 @@ SELECT LastName, FirstName, Phone FROM CUSTOMER WHERE CUSTOMERID IN (SELECT Cust
 SELECT LastName, FirstName, Phone FROM CUSTOMER JOIN INVOICE WHERE TotalAmount  > 100.00 ORDER BY LastName ASC, FirstName DESC;
 SELECT LastName, FirstName, Phone FROM CUSTOMER WHERE CustomerID IN (SELECT CustomerID FROM INVOICE_ITEM WHERE Item LIKE 'Dress Shirt%')ORDER BY LastName ASC, FirstName DESC;
 SELECT LastName, FirstName, Phone FROM CUSTOMER WHERE CustomerID IN (SELECT CustomerID FROM INVOICE_ITEM WHERE Item LIKE 'Dress Shirt%') ORDER BY LastName ASC, FirstName DESC;
-
